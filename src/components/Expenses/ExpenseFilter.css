@@ -1,0 +1,23 @@
+.expense__filter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.expense__filter-controls > label {
+  font-size: 2.6rem;
+}
+
+.expense__filter-select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2.6rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.expense__filter-select > option {
+  font-weight: 500;
+}

@@ -1,0 +1,87 @@
+.ExpenseForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.ExpenseForm__form-controls {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 8rem);
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+  grid-template-areas:
+    " title number"
+    " date date";
+}
+
+.ExpenseForm__form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.title {
+  grid-area: title;
+}
+.number {
+  grid-area: number;
+}
+.date {
+  grid-area: date;
+  width: 50%;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+input,
+.ExpenseForm__form-btn > button {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0.8rem;
+}
+
+input {
+  padding: 1.6rem;
+  background-color: var(--color-white);
+}
+
+.ExpenseForm__form-btn {
+  margin-left: auto;
+}
+
+.ExpenseForm__form-btn > button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1.2rem 2rem;
+  color: var(--color-white);
+  background-color: var(--color-tertiary-darker);
+}
+
+/* ================== Media Queries ============= */
+@media screen and (max-width: 480px) {
+  .ExpenseForm {
+    width: 100%;
+  }
+
+  .ExpenseForm__form-controls {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 8rem);
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    grid-template-areas:
+      "title"
+      "number"
+      "date";
+  }
+
+  .date {
+    width: 100%;
+  }
+}

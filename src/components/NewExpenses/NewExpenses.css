@@ -1,0 +1,12 @@
+.new__Expenses {
+  width: 60%;
+  padding: 2rem;
+  background-color: var(--color-gray);
+}
+
+/* ================== Media Queries ============= */
+@media screen and (max-width: 480px) {
+  .new__Expenses {
+    width: 100%;
+  }
+}

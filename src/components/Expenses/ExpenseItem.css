@@ -1,0 +1,46 @@
+.ExpenseItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 0.8rem 1rem;
+}
+
+.ExpenseItem__description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 90%;
+  color: var(--color-tertiary-darker);
+}
+
+.ExpenseItem__title {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+.ExpenseItem__price {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  border-radius: 0.8rem;
+  color: var(--color-white);
+  background-color: var(--color-primary-darker);
+}
+
+/* ================== Media Queries ============= */
+@media screen and (max-width: 480px) {
+  .ExpenseItem {
+    gap: 1.4rem;
+  }
+  .ExpenseItem__title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .ExpenseItem__price {
+    padding: 0.6rem;
+  }
+}
